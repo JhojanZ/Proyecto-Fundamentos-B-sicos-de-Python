@@ -1,3 +1,4 @@
+import pandas as pd
 from sodapy import Socrata
 
 def obtain_api(limits, department):
