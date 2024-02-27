@@ -4,7 +4,8 @@ from sodapy import Socrata
 def obtain_api(limits, department):
     client = Socrata("www.datos.gov.co", None)
 
-    results = client.get("gt2j-8ykr", limit=limits, departamento_nom=department, select="ciudad_municipio_nom, edad, tipo_recuperacion, fuente_tipo_contagio, estado, pais_viajo_1_nom")
+    params = "ciudad_municipio_nom, edad, tipo_recuperacion, fuente_tipo_contagio, estado, pais_viajo_1_nom"
+    results = client.get("gt2j-8ykr", limit=limits, departamento_nom=department, select=params)
 
     results_df = pd.DataFrame.from_records(results)
     #print(results_df)
@@ -12,4 +13,4 @@ def obtain_api(limits, department):
     return results_df
 
 
-# , "ciudad_municipio_nom", "edad", "fuente_tipo_contagio", "estado", "pais_viajo_1_nom"
+# , "ciudad_municipio_nom", "edad", "fuente_tipo_contagio", "fuente_de_contagio", "estado", "pais_viajo_1_nom"
