@@ -13,4 +13,4 @@ def obtain_api(limits, department):
     return results_df
 
 
-# , "ciudad_municipio_nom", "edad", "fuente_tipo_contagio", "fuente_de_contagio", "estado", "pais_viajo_1_nom"
+#"ciudad_municipio_nom", "edad", "fuente_tipo_contagio", "fuente_de_contagio", "estado", "pais_viajo_1_nom"
