@@ -9,7 +9,7 @@ def obtain_api(limits, department):
 
     results_df = pd.DataFrame.from_records(results)
     #print(results_df)
-
+    print("Number of rows::",results_df.shape[0])
     return results_df
 
 
