@@ -43,4 +43,4 @@ plt.title('Distribución de Precios')
 plt.xlabel('ciudad_municipio_nom')
 plt.ylabel('Edad')
 plt.show()
-plt.show()  # Agregando esta línea para mostrar la gráfica
+plt.show()  # Agregando esta línea para mostrar la gráfica  

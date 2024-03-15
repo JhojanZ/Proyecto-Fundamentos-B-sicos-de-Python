@@ -2,7 +2,7 @@ import pandas as pd
 from sodapy import Socrata
 
 department = "CAUCA"
-limits = 100000
+limits = 10000
 
 client = Socrata("www.datos.gov.co", None)
 
